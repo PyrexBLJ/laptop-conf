@@ -6,7 +6,7 @@ sudo pacman -S --needed ttf-jetbrains-mono-nerd power-profiles-daemon flatpak ba
 
 sudo groupadd input
 
-sudo usermod -a -G $USER input
+sudo usermod -a -G input $USER
 
 git clone https://aur.archlinux.org/yay.git
 
