@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd ~
+
 sudo pacman -S ttf-jetbrains-mono-nerd power-profiles-daemon flatpak base-devel -y
 
 git clone https://aur.archlinux.org/yay.git
