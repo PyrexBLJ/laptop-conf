@@ -2,7 +2,7 @@
 
 cd ~
 
-sudo pacman -S ttf-jetbrains-mono-nerd power-profiles-daemon flatpak base-devel kitty -y
+sudo pacman -S ttf-jetbrains-mono-nerd power-profiles-daemon flatpak base-devel kitty thunar ark nsxiv -y
 
 git clone https://aur.archlinux.org/yay.git
 
