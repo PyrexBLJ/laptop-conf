@@ -258,7 +258,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "nm-applet --indicator"
-spawn-at-startup "xwayland-satellite :0"
+spawn-at-startup "xwayland-satellite"
 
 environment {
     DISPLAY ":0"

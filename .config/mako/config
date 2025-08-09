@@ -1,0 +1,4 @@
+default-timeout=5000
+ignore-timeout=1
+
+#ik ignore timeout seems kinda dumb when i just set a timeout but it just ignores the timeout that came with the timeout and uses the default one instead

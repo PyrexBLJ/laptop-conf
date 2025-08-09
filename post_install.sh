@@ -13,6 +13,8 @@ cp -rv ~/Downloads/laptop-conf/.config ~
 systemctl --user daemon-reload
 systemctl --user add-wants niri.service swaybg.service
 
+makoctl reload
+
 killall waybar && waybar & disown
 
 flatpak install floorp discord gpu_screen_recorder
@@ -24,3 +26,5 @@ cd yay
 makepkg -si
 
 yay -S visual-studio-code-bin
+
+echo "Everything is setup now, a reboot is required for the swaybg service to take effect"
