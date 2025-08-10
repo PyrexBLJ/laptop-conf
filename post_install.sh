@@ -2,7 +2,7 @@
 
 cd ~
 
-sudo pacman -S --needed ttf-jetbrains-mono-nerd power-profiles-daemon flatpak base-devel kitty thunar ark nsxiv xwayland-satellite git
+sudo pacman -S --needed ttf-jetbrains-mono-nerd power-profiles-daemon flatpak base-devel kitty thunar ark nsxiv xwayland-satellite git polkit-gnome nwg-look mpv
 
 sudo groupadd input
 
@@ -14,6 +14,8 @@ systemctl --user daemon-reload
 systemctl --user add-wants niri.service swaybg.service
 
 makoctl reload
+
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 killall waybar && waybar & disown
 
@@ -27,4 +29,4 @@ makepkg -si
 
 yay -S visual-studio-code-bin
 
-echo "Everything is setup now, a reboot is required for the swaybg service to take effect"
+echo "Everything is setup now, a reboot is required for swaybg, xwayland satellite, etc."
